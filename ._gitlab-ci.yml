@@ -1,0 +1,46 @@
+# These are the default stages.
+# You don't need to explicitly define them.
+# But you could define any stages you want.
+stages:
+  - build-image
+  - k8s-load-image
+  - k8s-deploy-worker4
+  
+build-image:
+  stage: build-image
+  script:
+      - echo "build image start ..."
+      - sudo docker build -f Dockerfile -t emiapi .
+      - echo "build image end ..."
+      - echo "scp file to production(58) start ..."
+      - sudo docker save emiapi -o emiapi.docker
+      - sudo scp emiapi.docker elf@10.142.3.58:/mnt/hdd/emi-redis-api
+      - echo "scp file to production(58) end ... "  
+  only:
+      - master
+  tags:
+      - dev
+
+k8s-load-image:
+  stage: k8s-load-image
+  script:
+    - echo "docker load image start ..."
+    - docker load -i /mnt/hdd/emi-redis-api/emiapi.docker 
+    - echo "docker load image end ..."
+  only:
+    - master
+  tags:
+    - k8sworker4
+
+k8s-deploy4:
+  stage: k8s-deploy-worker4
+  script:
+    - echo "k8s deploy start ..."
+    - docker stop emiapi
+    - docker rm emiapi
+    - docker run -d -p 33000:33000 --restart=always --name emiapi emiapi:latest
+    - echo "k8s deploy end ..."
+  only:
+    - master
+  tags:
+    - k8sworker4

@@ -1,0 +1,190 @@
+tags:
+  - "daily"
+summary: "Daily Inference"
+description: ""
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+parameters:
+  - name: Dataframe
+    in: "body"
+    description: "daily inference"
+    operationId: "daily"
+    schema:
+      $ref: '#/definitions/Dataframe'
+    required: true
+definitions:
+  Dataframe:
+    properties:
+      inference_data:
+        items:
+          $ref: '#/definitions/Inference Data'
+      file_name:
+        type: string
+  Inference Data:
+    type: object
+    properties:
+      Contact Text:
+        type: string
+      Classify1:
+        type: string
+      Classify2:
+        type: string
+      Classify3:
+        type: string
+      DPS Num:
+        type: string
+      Service Tag:
+        type: string
+      Dispatch Date:
+        type: string
+      Production Date:
+        type: string
+      Ship Date:
+        type: string
+      Commodities Dispatched:
+        type: string
+      Commodity:
+        type: string
+      Age:
+        type: string
+      Age by Month:
+        type: string
+      Area Description:
+        type: string
+      Base PN:
+        type: string
+      Battery Date Code:
+        type: string
+      Battery Desc:
+        type: string
+      Battery PN:
+        type: string
+      Battery Vendor:
+        type: string
+      Bluetooth/WIFI Card PN:
+        type: string
+      Bluetooth Part Desc:
+        type: string
+      Brand Desc:
+        type: string
+      Business Rule:
+        type: string
+      BUID:
+        type: string
+      Build Facility:
+        type: string
+      Camera PN:
+        type: string
+      Channel Desc:
+        type: string
+      Camera PN:
+        type: string
+      Customer Hierarchy Name:
+        type: string
+      Customer Number:
+        type: string
+      DIMM Capacity:
+        type: string
+      DIMM Desc:
+        type: string
+      DIMM PN:
+        type: string
+      DIMM Qty:
+        type: string
+      DIMM Vendor:
+        type: string
+      Dispatch Month:
+        type: string
+      Dispatch Month Num:
+        type: string
+      Dispatch Week:
+        type: string
+      Family Grandparent:
+        type: string
+      Family Parent Desc:
+        type: string
+      HDD Date Code:
+        type: string
+      HDD Description:
+        type: string
+      HDD PN:
+        type: string
+      HDD Vendor:
+        type: string
+      Is a Repeat?:
+        type: string
+      Keyboard Date Code:
+        type: string
+      Keyboard Desc:
+        type: string
+      Keyboard PN:
+        type: string
+      Keyboard Vendor:
+        type: string
+      Keyboard Vendor Code:
+        type: string
+      LCD Date Code:
+        type: string
+      LCD Desc:        
+        type: string
+      LCD PN:        
+        type: string
+      LCD Vendor:        
+        type: string
+      MB Date Code:        
+        type: string
+      MB Desc:        
+        type: string
+      MB PN:        
+        type: string
+      Order Num:        
+        type: string
+      OS Family:        
+        type: string
+      OS Product Name:        
+        type: string
+      Parts Dispatched:        
+        type: string
+      Predecessor:        
+        type: string
+      Processor Desc:        
+        type: string
+      Processor Family:        
+        type: string
+      Processor PN:        
+        type: string
+      PS Desc:        
+        type: string
+      PS PN:        
+        type: string
+      PS Vendor:        
+        type: string
+      Region:        
+        type: string
+      RTM:        
+        type: string
+      Segment:        
+        type: string
+      Ship Month Num:        
+        type: string
+      Ship Week Num:        
+        type: string
+      Shipped PPID:        
+        type: string
+      Sub Region:        
+        type: string
+      Call Id:        
+        type: string
+      SR Number:        
+        type: string
+      Was Repeated?:        
+        type: string
+      Was Repeated?:        
+        type: string
+
+responses:
+  200:
+    description: ANDREWS14_20220326.xlsx inference sucessfully.
+

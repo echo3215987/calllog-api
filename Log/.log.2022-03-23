@@ -1,0 +1,28 @@
+2022-03-23 16:10:38,416 WARNING _internal._log Line:225 * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2022-03-23 16:10:38,416 INFO _internal._log Line:225 * Running on http://10.109.6.10:33000/ (Press CTRL+C to quit)
+2022-03-23 16:24:11,934 INFO _internal._log Line:22510.109.26.134 - - [23/Mar/2022 16:24:11] "POST /ai_inference/daily/ HTTP/1.1" 200 -
+2022-03-23 17:11:18,765 WARNING _internal._log Line:225 * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2022-03-23 17:11:18,766 INFO _internal._log Line:225 * Running on http://10.109.6.10:33000/ (Press CTRL+C to quit)
+2022-03-23 19:47:38,892 INFO _internal._log Line:22510.109.6.120 - - [23/Mar/2022 19:47:38] "[32mGET /apidocs HTTP/1.1[0m" 308 -
+2022-03-23 19:47:39,141 INFO _internal._log Line:22510.109.6.120 - - [23/Mar/2022 19:47:39] "GET /apidocs/ HTTP/1.1" 200 -
+2022-03-23 19:47:39,259 INFO _internal._log Line:22510.109.6.120 - - [23/Mar/2022 19:47:39] "GET /flasgger_static/swagger-ui.css HTTP/1.1" 200 -
+2022-03-23 19:47:39,260 INFO _internal._log Line:22510.109.6.120 - - [23/Mar/2022 19:47:39] "GET /flasgger_static/swagger-ui-bundle.js HTTP/1.1" 200 -
+2022-03-23 19:47:39,260 INFO _internal._log Line:22510.109.6.120 - - [23/Mar/2022 19:47:39] "GET /flasgger_static/lib/jquery.min.js HTTP/1.1" 200 -
+2022-03-23 19:47:39,262 INFO _internal._log Line:22510.109.6.120 - - [23/Mar/2022 19:47:39] "GET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+2022-03-23 19:47:41,150 INFO _internal._log Line:22510.109.6.120 - - [23/Mar/2022 19:47:41] "GET /apispec_1.json HTTP/1.1" 200 -
+2022-03-23 19:47:41,151 INFO _internal._log Line:22510.109.6.120 - - [23/Mar/2022 19:47:41] "GET /flasgger_static/favicon-32x32.png HTTP/1.1" 200 -
+2022-03-23 19:58:14,120 INFO _internal._log Line:22510.109.6.120 - - [23/Mar/2022 19:58:14] "GET /apidocs/ HTTP/1.1" 200 -
+2022-03-23 19:58:14,272 INFO _internal._log Line:22510.109.6.120 - - [23/Mar/2022 19:58:14] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2022-03-23 19:58:14,277 INFO _internal._log Line:22510.109.6.120 - - [23/Mar/2022 19:58:14] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2022-03-23 19:58:14,279 INFO _internal._log Line:22510.109.6.120 - - [23/Mar/2022 19:58:14] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2022-03-23 19:58:14,281 INFO _internal._log Line:22510.109.6.120 - - [23/Mar/2022 19:58:14] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2022-03-23 19:58:14,925 INFO _internal._log Line:22510.109.6.120 - - [23/Mar/2022 19:58:14] "GET /apispec_1.json HTTP/1.1" 200 -
+2022-03-23 20:00:05,043 INFO _internal._log Line:22510.109.6.120 - - [23/Mar/2022 20:00:05] "GET /apidocs/ HTTP/1.1" 200 -
+2022-03-23 20:00:05,128 INFO _internal._log Line:22510.109.6.120 - - [23/Mar/2022 20:00:05] "GET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+2022-03-23 20:00:05,129 INFO _internal._log Line:22510.109.6.120 - - [23/Mar/2022 20:00:05] "GET /flasgger_static/swagger-ui-bundle.js HTTP/1.1" 200 -
+2022-03-23 20:00:05,131 INFO _internal._log Line:22510.109.6.120 - - [23/Mar/2022 20:00:05] "GET /flasgger_static/lib/jquery.min.js HTTP/1.1" 200 -
+2022-03-23 20:00:05,133 INFO _internal._log Line:22510.109.6.120 - - [23/Mar/2022 20:00:05] "GET /flasgger_static/swagger-ui.css HTTP/1.1" 200 -
+2022-03-23 20:00:05,807 INFO _internal._log Line:22510.109.6.120 - - [23/Mar/2022 20:00:05] "GET /apispec_1.json HTTP/1.1" 200 -
+2022-03-23 20:00:05,815 INFO _internal._log Line:22510.109.6.120 - - [23/Mar/2022 20:00:05] "GET /flasgger_static/favicon-32x32.png HTTP/1.1" 200 -
